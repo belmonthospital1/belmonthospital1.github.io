@@ -164,46 +164,9 @@ font-size:20px;
 }
 
 /* boton enviar */
-.boton{
- 
-    height: 30px;
-    width: 90px;
-    margin-left: -300px;
-   
-    margin-bottom: 20px;
-    border-style: groove;
-    font-family: "comforta";
-    font-size: 20px;
-  
-
-  }
-
-#as{
- 
-  height: 30px;
-  width: 90px;
- margin-top: -400px;
-   border-style: groove;
-  font-family: "comforta";
-  font-size: 20px;
-  margin-left: -100px;
-  margin-top: 0px;
-
-}
-
-#ass{
- 
-  height: 30px;
-  width: 90px;
- margin-right: 900px;
-  border-style: groove;
-  font-family: "comforta";
-  font-size: 20px;
-  margin-left: -200px;
-  margin-top: -100px;
 
 
-}
+
 
 
 
