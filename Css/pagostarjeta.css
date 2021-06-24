@@ -1,0 +1,126 @@
+
+.titulo {
+  color: white;
+  font-size: 60px;
+  margin-top: -35px;
+  margin-bottom: -5px;
+  
+
+}
+.pagos {
+  background-color: #4badb4;
+  font-size: 20px;
+  width: 850px;
+  height: auto;
+  margin: 10px 225px;
+  margin-left: 150px;
+  margin-top: -40px;
+  margin-bottom: 50px;
+  background-image: url(/Img/body1.jpg);
+  border-radius: 10px;
+}
+/* cuadors fieldset */
+.fiel1  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: white;
+}
+
+.fiel2  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: white;
+}
+
+.fiel3  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: white;
+}
+/***********************************************/
+.fiel1-5  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: rgb(0, 0, 0);
+}
+
+
+.fiel2-5  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: rgb(0, 0, 0);
+}
+
+.fiel3-5  {
+  background-color: #277379;
+  border: #ffffff  5px solid;
+  color: rgb(5, 0, 0);;
+}
+
+/**************************************************************/
+
+/* fin de cuadors fieldset */
+.datos {
+  
+  border-style: #4badb4 5px solid;
+}
+/* .titular {
+
+}
+.datoscita {
+
+} */
+
+
+
+
+.hospital{
+  text-align: center;
+  background:white;
+  margin-left: 100px;
+  margin-right: 500px;
+  margin-top: -22px;
+  margin-bottom: -20px;
+  border-radius: 5px;
+  border: rgb(153, 153, 153) 1px solid;
+}
+
+
+.boton{
+
+background: #146a70;
+color: white ;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 350px;
+border-radius: 8px;
+padding: 8px;
+font-family: "comforta";
+border-color:white;
+transition: all 1s;
+height: 30px;
+
+}
+
+.boton:hover{
+
+font-size: 20px;
+
+}
+
+input {
+
+  border-radius: 5px;
+  border-style: none;
+  margin-left: 5px;
+  height: 20px;
+}
+
+select{
+  height: 25px;
+  width: 200px;
+  border-radius: 5px;
+  border-style: none;
+  margin-left: 5px;
+}

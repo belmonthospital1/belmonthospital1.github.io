@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos Tarjeta</title>
+    <link rel="stylesheet"  href="Css/Botones_De_inicio.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/pagostarjeta.css">
+    <link rel="icon" type="image/vnd.microsoft.ico" href="Img/logo04.png">
+    <script src="https://kit.fontawesome.com/6709411951.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+
+   <div class="contenedorGeneral">
+<div class="color">
+     <img class="logo" src="Img/logo04.png" alt="logo de hospital" >
+  
+
+    <div class="botomInicio">
+        <header>
+           
+               <a class="boton1"  href="inicio.html">Inicio</a>
+               <a class="boton2"  href="Nosotros.html">Nosotros</a>
+               <a class="boton3"  href="especialidades.html">Especialidades</a>
+               <a class="boton4"  href="blog.html">Blog</a>
+               <a class="boton5"  href="solicituddecita.html">Citas en linea</a>
+            
+        </header>
+    </div>
+      </div>
+      <img class="banner" src="" alt="banner principal" id="baner">  <!-- imagen de banner -->
+
+
+
+    
+    
+      <div class="titulo"><p>Pagos:</p></div>
+      <div class="pagos">
+         
+          <h2> <fieldset class="fiel1"> 1.Datos de la Tarjeta </fieldset></h2>
+      <div class="datos"><fieldset class="fiel1-5">
+          <label for="cboT">Marca: </label>
+          <select name="cboTipoTarjeta" id="cboTipoTarjeta" required>
+              <option value="0">Tarjeta Clasica</option>
+              <option value="1">Tarjeta Dorada</option>
+              <option value="2">Tarjeta Platinum</option>
+              <option value="3">Tarjeta Black</option>
+              <option value="4">Tarjeta Virtual</option>
+          </select>
+          <div>
+          <label for="txtnumeroTar">Nº de Tarjeta:</label><input type="text" name="txtnumeroTar" id="numeroTar" placeholder="" required><br>
+          <label for="txtnumeroSe">Codigo de Seguridad:</label><input type="text" name="txtnumeroSe" id="numeroSe" placeholder="" required><br>
+          <label for="txtFechaEx">Fecha de Expiracion:</label><input type="text" name="txtFechaEx" id="FechaEx" placeholder="" required><br>
+          </div>
+      </fieldset></div>
+      
+      <h2> <fieldset class="fiel2" >2.Titular de la Tarjeta </fieldset></h2>
+  <div class="titular"> 
+      <fieldset class="fiel2-5">
+      <div>
+          <label for="txtNombre">Nombre:</label><input type="text" name="txtNombre" name="txtNombre" id="txtNombre" placeholder="" required><br>
+          <label for="txtApellido">Apellido:</label><input type="text" name="txtApellido" name="txtApellido" id="txtApellido" placeholder="" required><br>
+          <label for="txtEmail">Email:</label><input type="text" name="txtEmail" name="txtEmail" id="txtEmail" placeholder="" required><br>
+          <label for="txtVerificacion">Verificacion Email:</label><input type="text" name="txtVerificacion" name="txtVerificacion" id="txtVerificacion" placeholder="" required><br>
+        </div>
+    </fieldset>
+  </div>
+  <h2><fieldset class="fiel3"> Datos de Cita:</fieldset></h2>
+          <div class="datoscita">
+              <fieldset class="fiel3-5">
+          <label for="txtHospital">Hospital:</label> <div class="hospital">BELMOT S.A.C</div> <br>
+          <label for="txtcita">Nº de Cita:</label><input type="text" name="txtCita" name="txtCita" id="txtCita" placeholder="xxxxxxxxxxx"><br>
+           <label for="txtcobro">Tipo:</label>
+          <input type="radio" name="categoria" id="rbA">
+          <label for="rbA">Soles</label> 
+          <input type="radio" name="categoria" id="rbB">
+          <label for="rbB">Dolares</label>
+          <input type="radio" name="categoria" id="rbC">
+          <label for="rbC">Euros</label>
+         
+          <br>
+          <label for="txtMonto">Monto de Cita:</label><input type="text" name="txtMonto" name="txtMonto" id="txtMonto" placeholder="xxxxxxxxxxx"><br>
+        </fieldset>
+        </div>
+  
+  <div class="moverboton">
+      <a href="PAGOrealizado.html">
+      
+  <input class="boton" type="button" value="PAGAR" onclick="evaluar()"></a>
+  </div>
+</div>      
+
+
+
+
+<aside>
+
+  <!-- espacio de publicidad -->
+
+</aside>
+
+ <!-- footer -->
+<div class="divFooter">
+<footer>
+ 
+ <div>
+   <img class="imgpagos" src="Img/pagos.png" alt="Metodos de pagos">
+ </div>
+  
+ <div class="enlacesInferiores">
+         
+    <h3>Enlaces importantes</h3>
+     <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="especialidades.html">Especialidades</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="solicituddecita.html">Citas en linea</a></li>
+        
+     </ul>
+ 
+ </div>
+
+
+<div class="contactos"> 
+           
+    <h3>Contactos</h3>
+    <p>hospitalbelmot@salud.com <br>
+    +51 934 456 788 <br>
+    Edificio Belmot Hospital <br>
+    Calle Jiron de la Union N° 291 Lima-Peru</p>
+ </div>
+
+ <div class="redesSociales">
+     
+
+    <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a>
+    <a href="https://mail.google.com/" target="_blank"> <i class="fas fa-envelope-square"></i></a>
+
+ </div>
+
+ </footer>
+   
+ 
+</div>
+
+<div class="hecho">
+
+    © Hecho por Franco Aguilar todos los derechos reservados 2021 ©
+</div>
+
+</div> 
+<script src="Js/solicitud_cita.js"></script>
+<script src="Js/banner.js"></script>
+</body>
+
+</html>
