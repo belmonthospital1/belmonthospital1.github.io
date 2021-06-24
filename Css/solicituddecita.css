@@ -168,8 +168,12 @@ font-size:20px;
 
 .botones button{
   display: flex;
-  margin-left: -200px;
   
+  
+}
+
+.botones{
+  margin-left: -200px;
 }
 
 
