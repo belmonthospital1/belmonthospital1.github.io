@@ -18,7 +18,7 @@ function evaluar(){
     
     /************************************************ */
     if(!exnom.test(nom)){
-        document.getElementsByClassName("in1")[0].innerHTML="*No/valido";
+        document.getElementsByClassName("in1")[0].innerHTML="No/valido";
         document.getElementsByClassName("in1")[0].style.color="red";
         
     }

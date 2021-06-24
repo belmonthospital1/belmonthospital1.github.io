@@ -55,7 +55,7 @@
   background: cadetblue;
   max-width: 90%;
   margin-left: 30px;
-  height: 640px;
+  height: 680px;
   padding: 25px;
   border-radius: 10px;
   max-height: 100%;
@@ -166,14 +166,34 @@ font-size:20px;
 /* boton enviar */
 
 
-.botones button{
+.botones .botones1 .botones2  {
   display: flex;
+  background-color: white;
+  
   
   
 }
 
+button {
+  border-radius: 5px;
+  font-size: 20px;
+}
 .botones{
-  margin-right: -200px;
+  margin-top: 30px;
+  margin-left: -350px;
+}
+.botones1{
+  margin-left: -220px;
+  margin-top: -29px;
+}
+.botones2{
+  margin-left: -100px;
+  margin-top: -29px;
+  margin-bottom: 110px;
+}
+
+.botones a{
+  text-decoration: none;
 }
 
 
@@ -289,13 +309,13 @@ h5{
 
 
 h5 a:hover{
-
+  opacity: 90%;
   font-size: 35px;
 }
 
 
 h5 a{
-
-  color: red;
+  
+  color: rgb(16, 82, 4);
   transition: all 0.8s;
 }
