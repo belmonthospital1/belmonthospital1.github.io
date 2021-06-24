@@ -166,7 +166,9 @@ font-size:20px;
 /* boton enviar */
 
 
-
+.botones{
+  display: flex;
+}
 
 
 
