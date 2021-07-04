@@ -20,6 +20,7 @@ function evaluar(){
     if(!exnom.test(nom)){
         document.getElementsByClassName("in1")[0].innerHTML="No/valido";
         document.getElementsByClassName("in1")[0].style.color="red";
+        nom.focus();
         
     }
      
@@ -32,6 +33,7 @@ function evaluar(){
     if(!exdni.test(dni)){
         document.getElementsByClassName("in2")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in2")[0].style.color=" red";
+        dni.focus()
     }
     
     else{
@@ -44,6 +46,7 @@ function evaluar(){
     if(!exmail.test(mail)){
         document.getElementsByClassName("in3")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in3")[0].style.color=" red";
+        mail.focus()
     }else{
     
         document.getElementsByClassName("in3")[0].innerHTML=" Valido";
@@ -55,6 +58,7 @@ function evaluar(){
     if(!extelef.test(telef)){
         document.getElementsByClassName("in4")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in4")[0].style.color=" red";
+        telef.focus()
         
     }else{
         document.getElementsByClassName("in4")[0].innerHTML=" Valido";
@@ -62,11 +66,17 @@ function evaluar(){
     }
     
     /********************************************* */
+     
+
+
+
+    /********************************************* */
     
     
     if(!exasunto.test(asunto)){
         document.getElementsByClassName("in5")[0].innerHTML="No/valido";
         document.getElementsByClassName("in5")[0].style.color=" red";
+        asunto.focus()
     }else{
         document.getElementsByClassName("in5")[0].innerHTML="Valido";
         document.getElementsByClassName("in5")[0].style.color="white";
@@ -80,6 +90,7 @@ function evaluar(){
     if(!excomen.test(comen)){
         document.getElementsByClassName("in6")[0].innerHTML="No/valido";
         document.getElementsByClassName("in6")[0].style.color=" red";
+        comen.focus()
     }else{
         document.getElementsByClassName("in6")[0].innerHTML="Valido";
         document.getElementsByClassName("in6")[0].style.color="white";
