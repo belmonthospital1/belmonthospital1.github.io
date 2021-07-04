@@ -30,7 +30,7 @@ function evaluar(){
     
      //***************************************** */
     if(!exdni.test(dni)){
-        document.getElementsByClassName("in2")[0].innerHTML=" No/valido"
+        document.getElementsByClassName("in2")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in2")[0].style.color=" red";
     }
     
@@ -42,22 +42,22 @@ function evaluar(){
     /********************************************* */
     
     if(!exmail.test(mail)){
-        document.getElementsByClassName("in3")[0].innerHTML=" No/valido"
+        document.getElementsByClassName("in3")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in3")[0].style.color=" red";
     }else{
     
-        document.getElementsByClassName("in3")[0].innerHTML=" Valido"
+        document.getElementsByClassName("in3")[0].innerHTML=" Valido";
         document.getElementsByClassName("in3")[0].style.color=" white";
     }
     
     /********************************************* */
     
     if(!extelef.test(telef)){
-        document.getElementsByClassName("in4")[0].innerHTML=" No/valido"
+        document.getElementsByClassName("in4")[0].innerHTML=" No/valido";
         document.getElementsByClassName("in4")[0].style.color=" red";
         
     }else{
-        document.getElementsByClassName("in4")[0].innerHTML=" Valido"
+        document.getElementsByClassName("in4")[0].innerHTML=" Valido";
         document.getElementsByClassName("in4")[0].style.color="white";
     }
     
@@ -65,24 +65,25 @@ function evaluar(){
     
     
     if(!exasunto.test(asunto)){
-        document.getElementsByClassName("in5")[0].innerHTML="No/valido"
+        document.getElementsByClassName("in5")[0].innerHTML="No/valido";
         document.getElementsByClassName("in5")[0].style.color=" red";
     }else{
-        document.getElementsByClassName("in5")[0].innerHTML="Valido"
+        document.getElementsByClassName("in5")[0].innerHTML="Valido";
         document.getElementsByClassName("in5")[0].style.color="white";
     }
     
-    
+
     
     /********************************************* */
     
     
     if(!excomen.test(comen)){
-        document.getElementsByClassName("in6")[0].innerHTML="No/valido"
+        document.getElementsByClassName("in6")[0].innerHTML="No/valido";
         document.getElementsByClassName("in6")[0].style.color=" red";
     }else{
-        document.getElementsByClassName("in6")[0].innerHTML="Valido"
+        document.getElementsByClassName("in6")[0].innerHTML="Valido";
         document.getElementsByClassName("in6")[0].style.color="white";
+        window.location="Metodosdepago.html";
     }
     //******************************************************************************/ */
     
