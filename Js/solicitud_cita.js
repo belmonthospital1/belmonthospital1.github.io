@@ -12,8 +12,8 @@ function evaluar(){
     var exdni=(/[0-9]{8}$/);
     var exmail=/^(\w+)\@(\w+)\.([a-z]{2,4})$/i;
     var extelef=/[0-9]{9}$/;
-    var exasunto=(/^[a-zA-Z\s]+$/);
-    var excomen=(/^[a-zA-Z\s]+$/);
+    var exasunto=(/^[a-zA-Z\s]\w+$/);
+    var excomen=(/^[a-zA-Z\s]\w+$/);
     
     
     /************************************************ */
