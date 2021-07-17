@@ -1,117 +1,74 @@
-function evaluar(){
+var txtNom=document.getElementById("txtNom");
+var txtDni=document.getElementById("txtDni");
+var txtMail=document.getElementById("txtMail");
+var txtTelef=document.getElementById("txtTelef");
+var txtCono=document.getElementById("txtCono");
+var txtAsunto=document.getElementById("txtAsunto");
+var txtComen=document.getElementById("txtComen");
+var btnEnviar=document.getElementById("btnEnviar");
 
-    var nom=document.getElementById("nombre").value;
-    var dni=document.getElementById("dni").value;
-    var mail=document.getElementById("correo").value;
-    var telef=document.getElementById("num").value;
-    var asunto=document.getElementById("asunto").value;
-    var comen=document.getElementById("comentarios").value;
-    
-    
-    var exnom=(/^[a-zA-Z\s]+$/);
-    var exdni=(/[0-9]{8}$/);
-    var exmail=/^(\w+)\@(\w+)\.([a-z]{2,4})$/i;
-    var extelef=/[0-9]{9}$/;
-    var exasunto=(/^[a-zA-Z\s]\w+$/);
-    var excomen=(/^[a-zA-Z\s]\w+$/);
-    
-    
-    /************************************************ */
-    if(!exnom.test(nom)){
-        document.getElementsByClassName("in1")[0].innerHTML="No/valido";
-        document.getElementsByClassName("in1")[0].style.color="red";
-        nom.focus();
+
+function Registrar(){
+    if(txtNom.value=="" || txtNom.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtNom.focus();
+    }else if(txtDni.value=="" || txtDni.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtDni.focus();
+    }else if(txtMail.value=="" || txtMail.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtMail.focus();
+    }else if(txtTelef.value=="" || txtTelef.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtTelef.focus();
+    }else if(txtCono.value=="" || txtCono.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtCono.focus();
+    }else if(txtAsunto.value=="" || txtAsunto.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;;
+        txtAsunto.focus();
+    }else if(txtComen.value=="" || txtComen.value== null){
+        swal("HEMOS DETECTADO DATOS ERRONES. " , "REVISA LOS DATOS INGRESADOR Y VUELVE A INTENTARLO (**NO SE ACEPTAN CAMPOS VACIOS**) " , "error");;
+        txtComen.focus();
+    }else{
+        swal("TODOS LOS DATOS SON VALIDOS","","success");
         
-    }
-     
-     else{
-        document.getElementsByClassName("in1")[0].innerHTML=" Valido";
-        document.getElementsByClassName("in1")[0].style.color="white";
-     }
-    
-     //***************************************** */
-    if(!exdni.test(dni)){
-        document.getElementsByClassName("in2")[0].innerHTML=" No/valido";
-        document.getElementsByClassName("in2")[0].style.color=" red";
-        dni.focus()
-    }
-    
-    else{
-        document.getElementsByClassName("in2")[0].innerHTML=" Valido";
-        document.getElementsByClassName("in2")[0].style.color=" white";
-    }
-    
-    /********************************************* */
-    
-    if(!exmail.test(mail)){
-        document.getElementsByClassName("in3")[0].innerHTML=" No/valido";
-        document.getElementsByClassName("in3")[0].style.color=" red";
-        mail.focus()
-    }else{
-    
-        document.getElementsByClassName("in3")[0].innerHTML=" Valido";
-        document.getElementsByClassName("in3")[0].style.color=" white";
+        var nom=txtNom.value;
+        var dni=txtDni.value;
+        var mail=txtMail.value;
+        var telef=txtTelef.value;
+        var cono=txtCono.value;
+        var asunto=txtAsunto.value;
+        var comen=txtComen.value;
+        var db=database.ref("Registrar")
+        var Registrar=db.push();
+        Registrar.set({
+            nombre: nom,
+            dni: dni,
+            mail: mail,
+            telefono: telef,
+            conociste: cono,
+            asunto: asunto,
+            comentarios: comen,
+        });
+        // si pones esto no se registra
+        // window.location="Metodosdepago.html";
     }
     
-    /********************************************* */
-    
-    if(!extelef.test(telef)){
-        document.getElementsByClassName("in4")[0].innerHTML=" No/valido";
-        document.getElementsByClassName("in4")[0].style.color=" red";
-        telef.focus()
-        
-    }else{
-        document.getElementsByClassName("in4")[0].innerHTML=" Valido";
-        document.getElementsByClassName("in4")[0].style.color="white";
-    }
-    
-    /********************************************* */
-     
+}
+btnEnviar.addEventListener("click",Registrar);
 
 
 
-    /********************************************* */
-    
-    
-    if(!exasunto.test(asunto)){
-        document.getElementsByClassName("in5")[0].innerHTML="No/valido";
-        document.getElementsByClassName("in5")[0].style.color=" red";
-        asunto.focus()
-    }else{
-        document.getElementsByClassName("in5")[0].innerHTML="Valido";
-        document.getElementsByClassName("in5")[0].style.color="white";
-    }
-    
 
-    
-    /********************************************* */
-    
-    
-    if(!excomen.test(comen)){
-        document.getElementsByClassName("in6")[0].innerHTML="No/valido";
-        document.getElementsByClassName("in6")[0].style.color=" red";
-        comen.focus()
-    }else{
-        document.getElementsByClassName("in6")[0].innerHTML="Valido";
-        document.getElementsByClassName("in6")[0].style.color="white";
-        window.location="Metodosdepago.html";
-    }
-    //******************************************************************************/ */
-    
-    
-    
-    }
-    
-    
-    
-    
-    
-       
-    
-    
-    
-    
-    
-    
-    
-    
+function pagar(){
+
+
+
+        window.location="Metodosdepago.html" }
+
+
+btnPagar.addEventListener("click",pagar);
+
+
+// !txtNom.value=="" && !txtDni.value=="" && !txtMail.value=="" && !txtTelef.value=="" && !txtAsunto.value=="" && !txtComen.value==""

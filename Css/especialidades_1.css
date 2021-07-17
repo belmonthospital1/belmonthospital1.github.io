@@ -5,6 +5,7 @@
     src: url(/Prototipo_pagina_index/Fonts/Comfortaa-VariableFont_wght.ttf);
 }
 
+
 /* parrafo de especialidad */
 .p {
 
@@ -277,7 +278,7 @@ h4{
 /* texto auto */
 .menciones1{
 
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-style: normal;
     font-size: 50px;
@@ -329,4 +330,31 @@ h4{
 
     font-size: 20px;
     text-align: justify;
+}
+
+/* ir a la galeria de imagnes deespecialidades */
+.gal{
+
+    text-decoration: none;
+    text-align: center;
+  
+
+}
+
+.gal1{
+    margin-top: 50px;
+    color: rgb(14, 48, 141);
+    background-color:white ;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 1.5s;
+    
+}
+
+.gal1:hover{
+    background-color: #1F628E;
+    color: white;
+
 }

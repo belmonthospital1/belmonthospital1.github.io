@@ -19,6 +19,7 @@ body{
 .banner{
     border-radius: 20px;
     padding: 10px;
+    max-width: 120%;
    
 }
 
@@ -28,6 +29,7 @@ body{
     border-radius: 30px;
     margin-left: -50px;    
     margin-right: -60px; 
+    max-width: 120%;
 
 }
 /* dimenciones de logo */
@@ -52,9 +54,10 @@ margin-top: -55px;
 margin-bottom: 30px;
 padding: 15px; 
 border-radius: 10px; 
-font-size: 20x;
+font-size: 100%;
 font-family: "cenzil";
 font-family: "comforta";
+max-width: 120%;
 
 }
 
@@ -79,6 +82,7 @@ font-family: "comforta";
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
+    max-width: 100%;
 }
 /* boton2 */
 
@@ -89,6 +93,7 @@ font-family: "comforta";
     border-radius: 30%;
     padding: 10px;
     color: rgb(255, 255, 255);
+    max-width: 100%;
     
     
 }
@@ -98,7 +103,7 @@ font-family: "comforta";
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
-    
+    max-width: 100%;
 }
 
 /* boton 03  */
@@ -110,6 +115,7 @@ font-family: "comforta";
     border-radius: 30%;
     background-color: #4badb4;
     color: rgb(255, 255, 255);
+    max-width: 100%;
     
 }
 
@@ -118,6 +124,7 @@ font-family: "comforta";
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
+    max-width: 100%;
 }
 
 /* boton 04 */
@@ -128,6 +135,7 @@ font-family: "comforta";
     border-radius: 30%;
     background-color: #4badb4;
     color: rgb(255, 255, 255);
+    max-width: 100%;
     
 }
 
@@ -136,6 +144,7 @@ font-family: "comforta";
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
+    max-width: 100%;
 }
 /* boton 05 */
 .boton5:hover{
@@ -145,6 +154,7 @@ font-family: "comforta";
     border-radius: 30%;
     background-color: #4badb4;
     color: rgb(255, 255, 255);
+    max-width: 100%;
     
 }
 
@@ -153,6 +163,7 @@ font-family: "comforta";
     text-decoration: none;
     transition: 1.5s;
     color:#4badb4;
+    max-width: 100%;
 }
 .banner{
     width: 1150px;
@@ -188,11 +199,11 @@ h1 p{
 
 /* parrafo de especialidades / inicio */
 .pp{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 /* parrafo de especialidades / Especialidades */
 .ppp{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h4{

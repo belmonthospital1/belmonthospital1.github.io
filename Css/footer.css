@@ -1,8 +1,26 @@
 footer {
     display: flex;
     margin-top: 40px;
-    margin-left: 60px;
+    margin-left: -15px;
+    margin-right: 20px;
+    background-color:#1F628E ;
+    padding: 20px;
   }
+
+  .reservado{
+
+    margin: auto;
+    margin-top: 300px;
+    background-color: rgb(255, 255, 255);
+  margin-top: 0px;
+  text-align: center;
+  margin-left: -15px;
+    margin-right: 20px;
+    color:#1F628E ;
+    font-weight: bold;
+
+  }
+
   /* dimencios de imagen de pagos */
   .imgpagos {
     width: 300px;
@@ -37,9 +55,13 @@ footer {
     
   }
   
-  .contactos p {
+ .x {
     font-size: 18px;
     transition: 1s;
+    color: white;
+  }
+  .contactos p:hover{
+    font-size: 18pxs;
   }
   .contactos p:hover {
     
@@ -49,6 +71,7 @@ footer {
 
   h3{
     font-weight: bolder;
+
   }
   
   .redesSociales {
@@ -115,3 +138,4 @@ margin-bottom: 100px;
 font-size: 80px;
 
 }
+

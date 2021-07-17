@@ -69,7 +69,7 @@ p{
   font-size: 25px;
 } */
 .yape img {
-  margin-left: px;
+  margin-left: -150px;
   height: 280px;
   width: 300px;
   border-radius: 10px;
@@ -96,10 +96,11 @@ p{
 }
 
 
+
 .paypal img {
-  margin-left: px;
+  margin-left: -150px;
   height: 280px;
-  width: 500px;
+  width: 300px;
   border-radius: 10px;
   transition: 1s;
   
@@ -123,6 +124,34 @@ p{
   font-size: 25px;
 }
 
+/**/
+.tarjeta img {
+  margin-left: -170px;
+  height: 280px;
+  width: 300px;
+  border-radius: 10px;
+  transition: 1s;
+  
+}
+
+.tarjeta img:hover {
+  padding: 10px;
+  border-radius: 40%;
+  border: rgb(68, 255, 35) 5px solid;
+  opacity: 70%;;
+}
+
+.tarjeta {
+  margin-left: 150px;
+  height: 280px;
+  width: 300px;
+  transition: 1s;
+}
+
+.tarjeta:hover{ 
+  font-size: 25px;
+}
+
 /* fin de animaciones de pago */
 /* .descripcion1 {
   width: 110%;
@@ -131,18 +160,25 @@ p{
   text-decoration: wavy;
  
 } */
-.descripcion2 {
+.descripcion1 {
   width: 110%;
   margin-bottom: 80px;
-  margin-left: -10px;
+  margin-left: -170px;
  
  
   
 }
+.descripcion2 {
+  width: 110%;
+  margin-bottom: 80px;
+  margin-left: -160px;
+  
+}
+
 .descripcion3 {
   width: 110%;
   margin-bottom: 80px;
-  margin-left: 80px;
+  margin-left: -170px;;
   
 }
 

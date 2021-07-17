@@ -166,7 +166,7 @@ font-size:20px;
 /* boton enviar */
 
 
-.botones .botones1 .botones2  {
+.botones .botones1   {
   display: flex;
   background-color: white;
   
@@ -186,7 +186,10 @@ button {
   margin-left: -200px;
   margin-top: -29px;
 }
-
+.botones2{
+  margin-left: -20px;
+  margin-top: -28px;
+}
 
 .botones a{
   text-decoration: none;
@@ -314,4 +317,13 @@ h5 a{
   
   color: rgb(172, 22, 2);
   transition: all 0.8s;
+}
+
+
+/* boton pagar  */
+
+#btnPagar{
+
+margin-top: -20px;
+
 }
